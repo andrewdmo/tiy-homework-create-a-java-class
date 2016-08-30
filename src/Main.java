@@ -3,12 +3,13 @@
  */
 public class Main {
     public static void main(String[] args) {
-        Baseballpositions player = new Baseballpositions("Babe", "Pitcher", 300000, true, false);
 
-        //player.salaryplussigningbonus();
+        BaseballPlayers player1 = new BaseballPlayers();
 
-        //salary.salaryplussigningbonus()
+        player1.minorProfile("The Babe", "Pitcher", 75000);
+        System.out.println("\nMinor league player:" + player1.toString());
 
-        System.out.println(player);
+        player1.calledUp(player1);
+        System.out.println("\nMajor League player:" + player1.toString() + "\n\nLa Fin!");
     }
 }
