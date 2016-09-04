@@ -4,12 +4,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        BaseballPlayers player1 = new BaseballPlayers();
+       // BaseballPlayers player1 = new BaseballPlayers();
 
-        player1.minorProfile("The Babe", "Pitcher", 75000);
-        System.out.println("\nMinor league player:" + player1.toString());
+        BaseballPlayer ruth = new BaseballPlayer("The Babe", "Pitcher");
+        System.out.println("\nAmateur:\n" + ruth);
+        System.out.println("\nMinor leaguer:\n" + ruth.minorLeaguer());
+        System.out.println("\nCalled up:\n" + ruth.calledUp());
 
-        player1.calledUp(player1);
-        System.out.println("\nMajor League player:" + player1.toString() + "\n\nLa Fin!");
+        BaseballPlayer piazza = new BaseballPlayer("Mike Piazza", "Catcher");
+        System.out.println("\nAmateur:\n" + piazza);
+        System.out.println("\nMinor leaguer:\n" + piazza.minorLeaguer());
+        System.out.println("\nCalled up:\n" + piazza.calledUp());
+
     }
 }
